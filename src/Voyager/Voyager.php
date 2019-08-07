@@ -58,7 +58,7 @@ class Voyager extends \TCG\Voyager\Voyager
 
             // Loop through all the packages and get the version of voyager
             foreach ($file->packages as $package) {
-                if ($package->name == 'glenwell/admin-module') {
+                if ($package->name == 'rivomanana/admin-module') {
                     $this->version = $package->version;
                     break;
                 }
