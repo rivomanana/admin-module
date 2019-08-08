@@ -28,6 +28,10 @@ class VoyagerServiceProvider extends \TCG\Voyager\VoyagerServiceProvider
         $this->app->singleton('voyager', function () {
             return new \Modules\Admin\Voyager\Voyager();
         });
+        
+        $this->app->singleton('VoyagerAuth', function () {
+            return auth();
+        });
 
         $this->loadHelpers();
         $this->registerAlertComponents();
